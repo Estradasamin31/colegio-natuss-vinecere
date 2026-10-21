@@ -1,0 +1,10 @@
+{
+  "description": "This virtual campus platform enhances the educational experience for students and staff at Vision School, offering interactive features and professional movement.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

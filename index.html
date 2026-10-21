@@ -1,60 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NATUSS VINECERE | Panel del colegio</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<aside class="sidebar" id="sidebar">
-  <div class="brand">
-    <svg class="crest" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 44 9v21c0 12-8 20-20 24C12 50 4 42 4 30V9z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 14l4 9h9l-7 6 3 10-9-6-9 6 3-10-7-6h9z" fill="currentColor"/></svg>
-    <div><strong>NATUSS VINECERE</strong><small>Nacidos para vencer</small></div>
-  </div>
-  <nav class="nav">
-    <button class="active" data-view="resumen">Resumen</button>
-    <button data-view="estudiantes">Estudiantes</button>
-    <button data-view="agenda">Agenda escolar</button>
-  </nav>
-  <p class="year">Año escolar 2026</p>
-</aside>
-
-<div class="main">
-  <header class="topbar">
-    <button class="icon-btn menu" id="menuBtn" aria-label="Abrir menú">☰</button>
-    <div><h1 id="viewTitle">Resumen</h1><p id="today"></p></div>
-    <button class="icon-btn" id="themeBtn" aria-label="Cambiar tema">◐</button>
-    <div class="user"><span>Dirección</span><b>DA</b></div>
-  </header>
-
-  <section id="view-resumen" class="view active">
-    <div class="band" id="band"></div>
-    <div class="grid">
-      <div class="panel wide"><h2>Asistencia de la semana</h2><div class="bars" id="attBars"></div></div>
-      <div class="panel"><h2>Próximos eventos</h2><ul class="timeline" id="nextEvents"></ul></div>
-      <div class="panel wide"><h2>Promedio por grado</h2><div class="hbars" id="gradeBars"></div></div>
-      <div class="panel"><h2>Comunicados</h2><ul class="notes" id="notes"></ul></div>
-    </div>
-  </section>
-
-  <section id="view-estudiantes" class="view">
-    <div class="tools">
-      <input type="search" id="q" placeholder="Buscar estudiante por nombre">
-      <select id="gradeFilter"><option value="">Todos los grados</option></select>
-      <span id="count"></span>
-    </div>
-    <div class="table-wrap"><table>
-      <thead><tr><th>Estudiante</th><th>Grado</th><th>Promedio</th><th>Asistencia</th><th>Situación</th></tr></thead>
-      <tbody id="rows"></tbody>
-    </table></div>
-  </section>
-
-  <section id="view-agenda" class="view">
-    <div class="panel"><ul class="timeline full" id="allEvents"></ul></div>
-  </section>
-</div>
-<script src="script.js"></script>
-</body>
+<!doctype html>
+<html lang="<!-- figma:lang -->">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- figma:title --></title>
+    <!-- figma:head-end -->
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
 </html>
